@@ -1,0 +1,26 @@
+
+
+
+<div class="m-hero--slide" style="width: 100%; display: inline-block;">
+    <div class="m-hero__media">
+        <picture>
+            <source media="(max-width: 767px)"
+                srcset="https://image-tc.galaxy.tf/wijpeg-3y5dduyixdjysw96r46kg4rub/file.jpg?width=1920">
+            <img style="max-width: 100%; height:100%" src="../../../assets/images/images.jpg">
+        </picture>
+
+        <div class="hero__panel" style="height: 180px;">
+            <div class="ng-scope">
+                <div class="hero__title ng-binding">Please input the Cards as comma separated</div>
+                <input class="ui-select-directbook" style="height:30px; width:300px;" type="text" [(ngModel)]="inputString" placeholder="Cards">
+            
+                <button (click)="getSortedCards()" class="btn btn-secondary btn-lg">Submit</button>
+            </div>
+
+            <div class="ng-scope">
+                <div class="hero__title ng-binding">Sotred List</div>
+                <input class="ui-select-directbook" style="height:30px; width:300px;" type="text" [(ngModel)]="sortedCardList" placeholder="Cards">
+            </div>
+        </div>
+    </div>
+</div>
